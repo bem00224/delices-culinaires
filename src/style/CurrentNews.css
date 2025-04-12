@@ -1,0 +1,107 @@
+.current-news {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    color: rgba(0, 0, 0, 0.87);
+    border-width: initial;
+    border-style: initial;
+    border-color: black;
+    border-image: initial;
+    border-radius: 10px 10px 0px 0px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 20px;
+    margin: 50px 100px;
+}
+
+.currentnews-description {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.currentnews-title {
+    margin-left: 9px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.currentnews-card {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.currentnews-card-detail {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+}
+/*
+.currentnews-card-description {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.9s;
+}
+
+.currentnews-card-description::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+}
+
+.currentnews-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.currentnews-card-title {
+    padding: 10px;
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-size: 1rem;
+}
+*/
+
+@media screen and (max-width: 686px) {
+    .currentnews-card-detail {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .currentnews-card-detail {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .current-news {
+        border: none;
+        box-shadow: none;
+    }
+    .currentnews-card-detail {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}

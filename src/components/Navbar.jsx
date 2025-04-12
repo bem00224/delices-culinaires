@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../style/Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../../public/images/logo.png"
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
         </Link>
 
         <nav className={`navbar-menu ${isOpen ? "open" : ""}`}>
-          <button className="btn">Mes recettes</button>
+          <Link to="/mes-recettes"><button className="btn">Mes recettes</button></Link>
         </nav>
 
         <div className="menu-toggle" onClick={toggleMenu}>
