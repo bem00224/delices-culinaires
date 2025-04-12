@@ -1,0 +1,39 @@
+.currentnews-details-bottom {
+    margin: 30px 50px 50px 20px;
+    line-height: 28px;
+}
+
+.currentnews-details-section {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 940px) {
+    .details-info {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .currentnews-details-title {
+        font-size: 1.7rem;
+    }
+    .details-title {
+        width: 50%;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .arrow-icon {
+        top: 0px;
+    }
+    .details-image {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .currentnews-details-bottom-image {
+        width: 100%;
+    }
+}
