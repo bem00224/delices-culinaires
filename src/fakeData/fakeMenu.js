@@ -1,6 +1,9 @@
 import im1 from '../assets/soup.jpg'
 import im2 from '../assets/tomato.jpg'
 import im3 from '../assets/chocolate.jpg'
+import tarte from '../assets/tarte.jpg'
+import saumon from '../assets/saumon.jpg'
+import dessert from '../assets/desser.jpg'
 /*
 const Category = [
     {
@@ -402,4 +405,81 @@ export const fakeMenu = {
       isAdvertised: false,
     }
   ],
+  TopFood : [
+    {
+      id: 1,
+      imageSource: tarte,
+      title: "Tarte aux pommes",
+      preparationTime: 25,
+      cookingTime: 30,
+      ingredients: [
+        { name: "Pommes", quantity: 6 },
+        { name: "Pâte brisée", quantity: 1 },
+        { name: "Sucre", quantity: 1, unit: "sachet" },
+        { name: "Beurre", quantity: 30, unit: "g" },
+        { name: "Cannelle", quantity: 1, unit: "pincée" },
+      ],
+      instructions: [
+        "1. Éplucher et découper en morceaux les pomme.",
+        "2. Faire une compote : les mettre dans une casserole avec un peu d'eau (1 verre ou 2). Bien remuer. Quand les pommes commencent à ramollir, ajouter un sachet ou un sachet et demi de sucre vanillé. Ajouter un peu d'eau si nécessaire.",
+        "3. Vous saurez si la compote est prête une fois que les pommes ne seront plus dures du tout. Ce n'est pas grave s'il reste quelques morceaux.",
+        "4. Pendant que la compote cuit, éplucher et couper en quatre les deux dernières pommes, puis, couper les quartiers en fines lamelles (elles serviront à être posées sur la compote).",
+        "5. Préchauffer le four à 210°C (thermostat 7).",
+        "6. Laisser un peu refroidir la compote et étaler la pâte brisée dans un moule et la piquer avec une fourchette.",
+        "7. Verser la compote sur la pâte et placer les lamelles de pommes en formant une spirale ou plusieurs cercles, au choix ! Disposer des lamelles de beurre dessus.",
+        "8. Mettre au four et laisser cuire pendant 30 min. Surveiller la cuisson. Vous pouvez ajouter un peu de sucre vanillé sur la tarte pendant que çà cuit pour caraméliser un peu.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+    },
+    {
+      id: 2,
+      imageSource: saumon,
+      title: "Saumon aux amandes",
+      preparationTime: 15,
+      cookingTime: 20,
+      ingredients: [
+        { name: "Filets de saumon", quantity: 2 },
+        { name: "Amandes effilées", quantity: 50, unit: "g" },
+        { name: "Beurre", quantity: 20, unit: "g" },
+        { name: "Citron", quantity: 1 },
+        { name: "Sel", quantity: 1, unit: "pincée" },
+        { name: "Poivre", quantity: 1, unit: "pincée" },
+      ],
+      instructions: [
+        "1. Préchauffez le four à 180°C.",
+        "2. Placez les filets de saumon dans un plat.",
+        "3. Salez, poivrez et arrosez de jus de citron.",
+        "4. Parsemez d’amandes effilées et ajoutez le beurre fondu.",
+        "5. Enfournez pour 15-20 minutes.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+    },
+    {
+      id: 3,
+      imageSource: dessert,
+      title: "Fondant au chocolat",
+      preparationTime: 15,
+      cookingTime: 10,
+      ingredients: [
+        { name: "Chocolat noir", quantity: 200, unit: "g" },
+        { name: "Beurre", quantity: 100, unit: "g" },
+        { name: "Sucre", quantity: 80, unit: "g" },
+        { name: "Farine", quantity: 50, unit: "g" },
+        { name: "Œufs", quantity: 4 },
+      ],
+      instructions: [
+        "1. Préchauffez le four à 200°C.",
+        "2. Faites fondre le chocolat avec le beurre.",
+        "3. Ajoutez le sucre, la farine, puis les œufs un à un.",
+        "4. Versez dans des moules individuels beurrés.",
+        "5. Faites cuire 10 minutes.",
+        "6. Servez tiède avec une boule de glace vanille si désiré.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+    }
+  ],
+  
 };
