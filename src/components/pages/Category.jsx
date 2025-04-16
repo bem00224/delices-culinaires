@@ -13,7 +13,7 @@ const Category = () => {
             {
                 category.map((cat) =>  
                     <div key={cat.id}>
-                        <Link to={`/category/${cat.title}`}>
+                        <Link to={`/category/${encodeURIComponent(cat.title)}`}>
                             <div className='category-container'>
                                 <div className='category-detail'>
                                     <img className='category-image' src={cat.imageSource} alt={cat.title} />
