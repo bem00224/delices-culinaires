@@ -3,6 +3,7 @@ import '../../style/TopFood.css'
 import { fakeMenu } from '../../fakeData/fakeMenu';
 import { Link } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
+import Cards from '../reusable-ui/Cards';
 
 const TopFood = () => {
     const [topfood, setTopfood] = useState(fakeMenu.TopFood)
@@ -17,18 +18,8 @@ const TopFood = () => {
                         {
                             topfood.map((top) => {
                                 return (
-                                    <>
-                                        <Link to='/top-food' key={top.id}>
-                                            <div className='topfood-card-description'>
-                                                <button className='topfood-card-btn'>
-                                                    <CiHeart className='topfood-card-heart' />
-                                                </button>
-                                                <img className='topfood-card-image' src={top.imageSource} alt={top.title} />
-                                                <h3 className='topfood-card-title'>{top.title}</h3>
-                                            </div>
-                                        </Link>
-                                    </>
-                                )
+                                    <Cards key={top.id} image={top.imageSource} title={top.title} to={`/top-food/${top.title}`} />
+                                ) 
                             } )
                         }
                     </div>
@@ -39,3 +30,17 @@ const TopFood = () => {
 }
 
 export default TopFood;
+
+/*(
+                                    <>
+                                        <Link to={`/top-food/${top.title}`} key={top.id}>
+                                            <div className='topfood-card-description'>
+                                                <button className='topfood-card-btn'>
+                                                    <CiHeart className='topfood-card-heart' />
+                                                </button>
+                                                <img className='topfood-card-image' src={top.imageSource} alt={top.title} />
+                                                <h3 className='topfood-card-title'>{top.title}</h3>
+                                            </div>
+                                        </Link>
+                                    </>
+                                )*/
