@@ -32,75 +32,6 @@ import Soupecourgettecurry from '../assets/Soupe-courgette-curry.jpg'
 import Courgettesviandehachée from '../assets/Courgettes-viande-hachée.jpg'
 import Terrine from '../assets/Terrine.jpg'
 import Verrines from '../assets/Verrines.jpg'
-/*
-const News = [
-  {
-    id: 1,
-    //imageSource: "/images/burger-bacon-egg.png",
-    title: "Comment conserver les courgettes?",
-    quantity: 0,
-    isAvailable: true,
-    isAdvertised: false,
-  },
-  {
-    id: 2,
-    //imageSource: "/images/burger-vegan.png",
-    title: "Comment conserver les tomates?",
-    price: 5.4985,
-    quantity: 0,
-    isAvailable: true,
-    isAdvertised: false,
-  },
-  {
-    id: 3,
-    //imageSource: "/images/burger3.png",
-    title: "Faut-il décongeler sa viande avant de la cuire ?",
-    quantity: 0,
-    isAvailable: true,
-    isAdvertised: false,
-  },
-  {
-    id: 4,
-    //imageSource: "/images/drink1.png",
-    title: "Mauvaises odeurs dans une gourde, comment s'en débarrasser?",
-    quantity: 0,
-    isAvailable: true,
-    isAdvertised: false,
-  },
-  {
-    id: 5,
-    //imageSource: "/images/drink2.png",
-    title: "Astuces efficaces pour éviter que la ratatouille soit trop liquide",
-    quantity: 0,
-    isAvailable: true,
-    isAdvertised: false,
-  },
-  {
-    id: 6,
-    //imageSource: "/images/drink2.png",
-    title: "Pourquoi a-t-on moins d'appétit quand il fait chaud ?",
-    quantity: 0,
-    isAvailable: true,
-    isAdvertised: false,
-  },
-  {
-    id: 7,
-    //imageSource: "/images/drink2.png",
-    title: "L'eau citronnée : un trésor pour votre santé",
-    quantity: 0,
-    isAvailable: true,
-    isAdvertised: false,
-  },
-  {
-    id: 8,
-    //imageSource: "/images/drink2.png",
-    title: "Comment cuisiner un melon fade et sans goût?",
-    quantity: 0,
-    isAvailable: true,
-    isAdvertised: false,
-  },
-] 
-*/
 
 export const fakeMenu = {
   Category : [
@@ -1061,6 +992,210 @@ export const fakeMenu = {
       isAdvertised: false,
       category: "Desserts"
     }
+  ],
+  News : [
+    {
+      id: 1,
+      imageSource: tarte,
+      title: "Comment conserver les courgettes?",
+      preparationTime: 25,
+      cookingTime: 30,
+      ingredients: [
+        { name: "Pommes", quantity: 6 },
+        { name: "Pâte brisée", quantity: 1 },
+        { name: "Sucre", quantity: 1, unit: "sachet" },
+        { name: "Beurre", quantity: 30, unit: "g" },
+        { name: "Cannelle", quantity: 1, unit: "pincée" },
+      ],
+      instructions: [
+        "1. Éplucher et découper en morceaux les pomme.",
+        "2. Faire une compote : les mettre dans une casserole avec un peu d'eau (1 verre ou 2). Bien remuer. Quand les pommes commencent à ramollir, ajouter un sachet ou un sachet et demi de sucre vanillé. Ajouter un peu d'eau si nécessaire.",
+        "3. Vous saurez si la compote est prête une fois que les pommes ne seront plus dures du tout. Ce n'est pas grave s'il reste quelques morceaux.",
+        "4. Pendant que la compote cuit, éplucher et couper en quatre les deux dernières pommes, puis, couper les quartiers en fines lamelles (elles serviront à être posées sur la compote).",
+        "5. Préchauffer le four à 210°C (thermostat 7).",
+        "6. Laisser un peu refroidir la compote et étaler la pâte brisée dans un moule et la piquer avec une fourchette.",
+        "7. Verser la compote sur la pâte et placer les lamelles de pommes en formant une spirale ou plusieurs cercles, au choix ! Disposer des lamelles de beurre dessus.",
+        "8. Mettre au four et laisser cuire pendant 30 min. Surveiller la cuisson. Vous pouvez ajouter un peu de sucre vanillé sur la tarte pendant que çà cuit pour caraméliser un peu.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+      category: "Desserts"
+    },
+    {
+      id: 2,
+      imageSource: saumon,
+      title: "Comment conserver les tomates?",
+      preparationTime: 15,
+      cookingTime: 20,
+      ingredients: [
+        { name: "Filets de saumon", quantity: 2 },
+        { name: "Amandes effilées", quantity: 50, unit: "g" },
+        { name: "Beurre", quantity: 20, unit: "g" },
+        { name: "Citron", quantity: 1 },
+        { name: "Sel", quantity: 1, unit: "pincée" },
+        { name: "Poivre", quantity: 1, unit: "pincée" },
+      ],
+      instructions: [
+        "1. Préchauffez le four à 180°C.",
+        "2. Placez les filets de saumon dans un plat.",
+        "3. Salez, poivrez et arrosez de jus de citron.",
+        "4. Parsemez d’amandes effilées et ajoutez le beurre fondu.",
+        "5. Enfournez pour 15-20 minutes.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+      category: "Plats"
+    },
+    {
+      id: 3,
+      imageSource: dessert,
+      title: "Faut-il décongeler sa viande avant de la cuire ?",
+      preparationTime: 15,
+      cookingTime: 10,
+      ingredients: [
+        { name: "Chocolat noir", quantity: 200, unit: "g" },
+        { name: "Beurre", quantity: 100, unit: "g" },
+        { name: "Sucre", quantity: 80, unit: "g" },
+        { name: "Farine", quantity: 50, unit: "g" },
+        { name: "Œufs", quantity: 4 },
+      ],
+      instructions: [
+        "1. Préchauffez le four à 200°C.",
+        "2. Faites fondre le chocolat avec le beurre.",
+        "3. Ajoutez le sucre, la farine, puis les œufs un à un.",
+        "4. Versez dans des moules individuels beurrés.",
+        "5. Faites cuire 10 minutes.",
+        "6. Servez tiède avec une boule de glace vanille si désiré.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+      category: "Desserts"
+    },
+    {
+      id: 4,
+      imageSource: dessert,
+      title: "Mauvaises odeurs dans une gourde, comment s'en débarrasser?",
+      preparationTime: 15,
+      cookingTime: 10,
+      ingredients: [
+        { name: "Chocolat noir", quantity: 200, unit: "g" },
+        { name: "Beurre", quantity: 100, unit: "g" },
+        { name: "Sucre", quantity: 80, unit: "g" },
+        { name: "Farine", quantity: 50, unit: "g" },
+        { name: "Œufs", quantity: 4 },
+      ],
+      instructions: [
+        "1. Préchauffez le four à 200°C.",
+        "2. Faites fondre le chocolat avec le beurre.",
+        "3. Ajoutez le sucre, la farine, puis les œufs un à un.",
+        "4. Versez dans des moules individuels beurrés.",
+        "5. Faites cuire 10 minutes.",
+        "6. Servez tiède avec une boule de glace vanille si désiré.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+      category: "Desserts"
+    },
+    {
+      id: 5,
+      imageSource: dessert,
+      title: "Astuces efficaces pour éviter que la ratatouille soit trop liquide",
+      preparationTime: 15,
+      cookingTime: 10,
+      ingredients: [
+        { name: "Chocolat noir", quantity: 200, unit: "g" },
+        { name: "Beurre", quantity: 100, unit: "g" },
+        { name: "Sucre", quantity: 80, unit: "g" },
+        { name: "Farine", quantity: 50, unit: "g" },
+        { name: "Œufs", quantity: 4 },
+      ],
+      instructions: [
+        "1. Préchauffez le four à 200°C.",
+        "2. Faites fondre le chocolat avec le beurre.",
+        "3. Ajoutez le sucre, la farine, puis les œufs un à un.",
+        "4. Versez dans des moules individuels beurrés.",
+        "5. Faites cuire 10 minutes.",
+        "6. Servez tiède avec une boule de glace vanille si désiré.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+      category: "Desserts"
+    },
+    {
+      id: 6,
+      imageSource: dessert,
+      title: "Pourquoi a-t-on moins d'appétit quand il fait chaud ?",
+      preparationTime: 15,
+      cookingTime: 10,
+      ingredients: [
+        { name: "Chocolat noir", quantity: 200, unit: "g" },
+        { name: "Beurre", quantity: 100, unit: "g" },
+        { name: "Sucre", quantity: 80, unit: "g" },
+        { name: "Farine", quantity: 50, unit: "g" },
+        { name: "Œufs", quantity: 4 },
+      ],
+      instructions: [
+        "1. Préchauffez le four à 200°C.",
+        "2. Faites fondre le chocolat avec le beurre.",
+        "3. Ajoutez le sucre, la farine, puis les œufs un à un.",
+        "4. Versez dans des moules individuels beurrés.",
+        "5. Faites cuire 10 minutes.",
+        "6. Servez tiède avec une boule de glace vanille si désiré.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+      category: "Desserts"
+    },
+    {
+      id: 7,
+      imageSource: dessert,
+      title: "L'eau citronnée : un trésor pour votre santé",
+      preparationTime: 15,
+      cookingTime: 10,
+      ingredients: [
+        { name: "Chocolat noir", quantity: 200, unit: "g" },
+        { name: "Beurre", quantity: 100, unit: "g" },
+        { name: "Sucre", quantity: 80, unit: "g" },
+        { name: "Farine", quantity: 50, unit: "g" },
+        { name: "Œufs", quantity: 4 },
+      ],
+      instructions: [
+        "1. Préchauffez le four à 200°C.",
+        "2. Faites fondre le chocolat avec le beurre.",
+        "3. Ajoutez le sucre, la farine, puis les œufs un à un.",
+        "4. Versez dans des moules individuels beurrés.",
+        "5. Faites cuire 10 minutes.",
+        "6. Servez tiède avec une boule de glace vanille si désiré.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+      category: "Desserts"
+    },
+    {
+      id: 8,
+      imageSource: dessert,
+      title: "Comment cuisiner un melon fade et sans goût?",
+      preparationTime: 15,
+      cookingTime: 10,
+      ingredients: [
+        { name: "Chocolat noir", quantity: 200, unit: "g" },
+        { name: "Beurre", quantity: 100, unit: "g" },
+        { name: "Sucre", quantity: 80, unit: "g" },
+        { name: "Farine", quantity: 50, unit: "g" },
+        { name: "Œufs", quantity: 4 },
+      ],
+      instructions: [
+        "1. Préchauffez le four à 200°C.",
+        "2. Faites fondre le chocolat avec le beurre.",
+        "3. Ajoutez le sucre, la farine, puis les œufs un à un.",
+        "4. Versez dans des moules individuels beurrés.",
+        "5. Faites cuire 10 minutes.",
+        "6. Servez tiède avec une boule de glace vanille si désiré.",
+      ],
+      isAvailable: true,
+      isAdvertised: false,
+      category: "Desserts"
+    },
   ],
   Recipes : [
     {
