@@ -3,7 +3,7 @@ import Title from '../../reusable-ui/Title';
 import Cards from '../../reusable-ui/Cards';
 import "../../../style/Menu.css"
 
-const Menu = ({title, data, basePath= ''}) => {
+const Menu = ({title, data, basePath= '', withHeart=false }) => {
     return (
         <div className='section-cards'>
             <Title title={title} />
@@ -16,6 +16,8 @@ const Menu = ({title, data, basePath= ''}) => {
                                 to={`${basePath}/${title}`}
                                 image={imageSource}
                                 title={title}
+                                withHeart={withHeart}
+                                id={id}
                             />
                         ) )
                     }
