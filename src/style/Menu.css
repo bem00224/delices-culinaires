@@ -27,3 +27,27 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+@media screen and (max-width: 1190px) {
+    .section-cards-detail {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .section-cards {
+        border: none;
+        box-shadow: none;
+    }
+    .section-cards-detail {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 686px) {
+    .section-cards-detail {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
