@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Input = () => {
+const Menu = () => {
     return (
         <div>
-            InputText
+            Menu
         </div>
     );
 }
 
-export default Input;
+export default Menu;

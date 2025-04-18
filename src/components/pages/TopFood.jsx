@@ -4,21 +4,26 @@ import { fakeMenu } from '../../fakeData/fakeMenu';
 import { Link } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 import Cards from '../reusable-ui/Cards';
+import Title from '../reusable-ui/Title';
 
 const TopFood = () => {
     const [topfood, setTopfood] = useState(fakeMenu.TopFood)
+    
     return (
         <div className='topfood'>
-            <div className='topfood-description'>
-                <h3 className='topfood-title'>Top recettes</h3>
-            </div>
+            <Title title="Top recettes" />
             <div className='topfood-card'>
                 <div className='topfood-card-content'>
                     <div className='topfood-card-detail'>
                         {
                             topfood.map((top) => {
                                 return (
-                                    <Cards key={top.id} image={top.imageSource} title={top.title} to={`/top-food/${top.title}`} />
+                                    <Cards 
+                                        key={top.id} 
+                                        image={top.imageSource} 
+                                        title={top.title} 
+                                        to={`/top-food/${top.title}`}
+                                    />
                                 ) 
                             } )
                         }
