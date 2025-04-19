@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify/unstyled';
 import styled from 'styled-components';
 import { RiDeleteBin6Line } from "react-icons/ri";
+import '../../style/MesRecettes.css'
 
 const MesRecettes = () => {
     const [savedRecipes, setSavedRecipes] = useState([])
@@ -21,14 +22,16 @@ const MesRecettes = () => {
     
     
     return (
-        <MesRecettesStyled>
+        <MesRecettesStyled className='recette-global'>
             <h2>{savedRecipes.length === 0 ? "" : "Mes Recettes" }</h2>
             <div className="recettes-container">
                 {savedRecipes.length === 0 ? (
-                    <div className="recettes-container-top">
-                        <p>Vous n'avez aucune recette enregistrée.</p>
-                        <p>Naviguez à travers le site et enregistrez vos recettes préférées! 😊</p>
-                        <Link to={"/"}>Retourner sur la page d'accueil</Link>
+                    <div className='recettes-container-detail fade-in-up'>
+                        <div className="recettes-container-top">
+                            <p>Vous n'avez aucune recette enregistrée.</p>
+                            <p>Naviguez à travers le site et enregistrez vos recettes préférées! 😊</p>
+                            <Link to={"/"}>Retourner sur la page d'accueil</Link>
+                        </div>
                     </div>
                 ) : (
                     savedRecipes.map(recipe => (
@@ -59,14 +62,9 @@ export default MesRecettes;
 
 const MesRecettesStyled = styled.div`
     padding: 30px;
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        margin-left: 100px;
-        margin-top: 50px;
-    }
+    
 
-    .recettes-container {
+    /*.recettes-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
@@ -82,9 +80,9 @@ const MesRecettesStyled = styled.div`
             padding: 0px;
             margin-top: 95px;
         }
-    }
+    }*/
 
-    .recette-card {
+    /*.recette-card {
         -webkit-box-align: center;
         align-items: center;
         max-width: 80%;
@@ -157,7 +155,7 @@ const MesRecettesStyled = styled.div`
                 }
             }
         }
-    }
+    }*/
 `;
 
 /**
